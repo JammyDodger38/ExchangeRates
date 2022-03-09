@@ -27,6 +27,9 @@ const exchangeRates = async () => {
 fromUsd.addEventListener('input', () => {
     fromUsd.value = fromUsd.value.replace(/[^0-9\.]+/g, "")
 })
+fromRub.addEventListener('input', () => {
+    fromRub.value = fromRub.value.replace(/[^0-9\.]+/g, "")
+})
 
 convertBtn.addEventListener('click', () => {
     exchangeRates().then(data => {
